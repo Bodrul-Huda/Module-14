@@ -1,0 +1,193 @@
+Assignment Title: Authentication, Token Handling, and Email Integration in a Next.js Application
+
+
+ 
+
+
+Assignment Description: You are tasked with building a secure authentication system for a Next.js application. Additionally, you need to implement token handling, email verification, and redirection for unauthorised users. Below are the tasks you need to accomplish:
+
+
+ 
+
+
+
+
+User Registration and Email Verification:
+
+
+
+
+ 
+
+
+
+
+Implement a user registration system where users provide their email addresses and passwords.
+
+
+
+
+Upon registration, generate a unique verification token for each user.
+
+
+
+
+Send an email to the user's provided email address containing a link with the verification token. The email should be sent using Nodemailer.
+
+
+
+
+ 
+
+
+
+
+Setting Tokens in Headers:
+
+
+
+
+ 
+
+
+
+
+Develop a middleware that sets an authentication token in the HTTP headers of requests made by authenticated users. This token should be used to validate user identities.
+
+
+
+
+ 
+
+
+
+
+Passing Token with Middleware:
+
+
+
+
+ 
+
+
+
+
+Create middleware that intercepts incoming requests to protected routes.
+
+
+
+
+Verify the presence and validity of the authentication token in the request headers.
+
+
+
+
+If the token is valid, allow the request to proceed; otherwise, deny access and redirect the user to a login page or display an appropriate error message.
+
+
+
+
+ 
+
+
+
+
+Encoding and Decoding Tokens:
+
+
+
+
+ 
+
+
+
+
+Implement functions to encode and decode tokens. The encoding function should create a token with user data, and the decoding function should verify and extract user information from a token.
+
+
+
+
+
+
+Redirect to Homepage if Not Logged In:
+
+
+
+
+ 
+
+
+
+
+Set up a mechanism to redirect users to the homepage when they attempt to access protected routes without a valid token or if they haven't completed email verification.
+
+
+
+
+Unauthorised users should be redirected to the login or registration page.
+
+
+
+
+ 
+
+
+Your task is to design, develop, and document these features in a Next.js application, ensuring proper user authentication, token handling, email verification, and redirection.
+
+
+ 
+
+
+Note: You can use any external libraries or frameworks you find suitable for the task, including Nodemailer for sending emails.
+
+
+ 
+
+
+Assessment Criteria:
+
+
+ 
+
+
+
+
+Proper implementation of user registration and email verification.
+
+
+
+
+Setting tokens in headers and using middleware for authentication.
+
+
+
+
+Correct encoding and decoding of tokens.
+
+
+
+
+Implementing redirection for unauthorized users.
+
+
+
+
+Integration of Nodemailer for email functionality.
+
+
+
+
+Clarity and organization of code.
+
+
+
+
+Explanation of the code and its functionality.
+
+
+
+
+ 
+
+
+Please provide your github repository link and live link. 
